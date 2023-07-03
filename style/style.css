@@ -1,0 +1,181 @@
+:root{
+  --cor-principal: #B6EADA;
+  --cor-secundaria: #5B8FB9;
+  --cor-tercearia: #301E67;
+  --cor-de-fundo: #2d2d2c;
+
+  --font-principal:  'Inter', sans-serif;
+  --font-krona: 'Krona One', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: var(--cor-de-fundo);
+}
+
+.principal{
+  background-image: url("/assets/Imagemdefundo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-align: center;
+}
+
+.container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%; 
+}
+
+.empresa__logo{
+  position: absolute;
+  top: 0.9375rem;
+  left: 37.5rem;
+  width: 18.75rem;
+  height: 6.25rem;
+}
+
+.container__caixa{
+  position: relative;
+  top: -80px;
+  margin: 0 6em;
+  
+}
+
+.titulo{
+  color: var(--cor-principal);
+  font-size: 37px;
+  
+}
+
+.paragrafo{
+  color: white;
+  font-size: 1.4rem;
+}
+
+.botao{
+  background-color: transparent;
+  gap: 2px;
+  padding: 1em;
+  color: white;
+  display: block;
+  text-decoration: none;
+  margin-top: 1em;
+  border: 2px solid var(--cor-principal);
+  font-size: 20px;
+}
+
+.botao :hover{
+  background-color: rgb(230, 131, 10);
+}
+
+.secundario{
+  align-items: center;
+  margin: 0 6em;
+}
+
+.camisa__polo{
+  width: 25.75rem;
+  height: 25.25rem;
+}
+
+.descricao__titulo {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--cor-principal);
+  margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+  color: rgb(196, 196, 196);
+  font-size: 26px;
+}
+
+.camisa__raglan{
+  width: 25.75rem;
+  height: 25.25rem;
+  margin-left: 13em;
+}
+
+.camisa__babylook{
+  width: 25.75rem;
+  height: 25.25rem;
+  margin: -6em 3em;
+}
+
+.camisa__golao{
+  width: 25.75rem;
+  height: 25.25rem;
+  margin: -10em 13em;
+}
+
+.camisa__golav{
+  width: 25.75rem;
+  height: 25.25rem;
+  margin: -6em 3em;
+}
+
+.rodape{
+  text-align: center;
+  margin: 5em 3em;
+}
+
+.lista__link{
+  color: var(--cor-principal);
+  margin-left: 1em;
+  
+}
+
+.rodape__lista{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 2em 0;
+}
+
+@media screen and (max-width: 844px) {
+  .empresa__logo{
+    width: 18.75rem;
+    height: 6.25rem;
+    margin: 2em 5em;
+    }
+  
+  .container {
+      display: block;
+      background-image: none;
+    }
+
+  .container__caixa{
+        margin: 2em 2em;
+    }
+  .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+  .secundario__imagem {
+        width: 50vw;
+    }
+
+  .dispositivos__lista {
+        display: inline-block;
+    }
+
+  .rodape__lista {
+        display: block;
+    }
+  }
+
+
+
+
+
+
+
+
